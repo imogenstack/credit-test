@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   run-for-ten-minutes:
-    runs-on: tenki-standard-small-2c-4g
+    runs-on: ubuntu-latest
     steps:
       - name: Start workflow
         run: echo "Workflow started!"
