@@ -2,16 +2,15 @@ name: TenMinuteWorkflow
 
 on:
   workflow_dispatch:
-
 jobs:
   run-for-ten-minutes:
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-small-2c-4g
     steps:
       - name: Start workflow
         run: echo "Workflow started!"
 
       - name: Sleep for 10 minutes
-        run: sleep 600   # 600 seconds = 10 minutes
+        run: sleep 600 # 600 seconds = 10 minutes
 
       - name: Finish
         run: echo "Workflow finished after 10 minutes!"
